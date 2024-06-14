@@ -16,7 +16,7 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 5.0.x # Specify the desired .NET version
+          dotnet-version: 4.8.x # Specify the desired .NET version
 
       - name: Install Dependencies 
         run: dotnet restore ./DotNETWebSample/DotNETWebSample.csproj
