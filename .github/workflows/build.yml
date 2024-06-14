@@ -19,7 +19,7 @@ jobs:
           dotnet-version: 5.0.x # Specify the desired .NET version
 
       - name: Install Dependencies 
-        run: dotnet restor ./DotNETWebSample/DotNETWebSample/DotNETWebSample.csproj
+        run: dotnet restor ./DotNETWebSample/DotNETWebSample.csproj
 
       - name: Build project
         run: dotnet build ./DotNETWebSample/DotNETWebSample/DotNETWebSample.csproj # Replace with your project name
