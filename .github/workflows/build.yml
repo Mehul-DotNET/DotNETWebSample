@@ -7,16 +7,16 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set up .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 4.8.x # Specify the desired .NET version
+          dotnet-version: 4.8 # Specify the desired .NET version
 
       - name: Install Dependencies 
         run: dotnet restor ./DotNETWebSample/DotNETWebSample/DotNETWebSample.csproj
