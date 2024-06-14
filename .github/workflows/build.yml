@@ -16,7 +16,7 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '4.8' # Specify the desired .NET version
+          dotnet-version: 4.8 # Specify the desired .NET version
 
       - name: Build project
         run: dotnet build ./DotNETWebSample/DotNETWebSample/DotNETWebSample.csproj # Replace with your project name
