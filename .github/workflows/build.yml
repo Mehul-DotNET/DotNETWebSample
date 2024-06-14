@@ -22,4 +22,4 @@ jobs:
         run: dotnet restore ./DotNETWebSample/DotNETWebSample.csproj
 
       - name: Build project
-        run: dotnet build ./DotNETWebSample/DotNETWebSample.csproj # Replace with your project name
+        run: dotnet build /t:build /p:Configuration=Release /p:DeployOnBuild=True # Replace with your project name
